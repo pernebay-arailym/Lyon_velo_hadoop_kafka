@@ -25,7 +25,7 @@ for line in sys.stdin:
         else:
             status_valide = 0
 
-        print(f"{station_id}\t{timestamp}\t{load_factor:.3f}\t{status_valide}")
+        print("{}\t{}\t{:.3f}\t{}".format(station_id, timestamp, load_factor, status_valide))
 
     except:
         continue

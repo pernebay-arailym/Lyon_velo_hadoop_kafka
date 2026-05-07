@@ -30,4 +30,10 @@ for station_id, values in data_by_station.items():
         avg_load = 0
         std_load = 0
 
-    print(f"{station_id}\t{avg_load:.3f}\t{std_load:.3f}\t{nb_valid}/{total_samples}")
+    print("{}\t{:.3f}\t{:.3f}\t{}/{}".format(
+    station_id,
+    avg_load,
+    std_load,
+    nb_valid,
+    total_samples
+))
