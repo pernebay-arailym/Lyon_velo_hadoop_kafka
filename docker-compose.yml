@@ -1,25 +1,14 @@
-version: "3"
-
 services:
 
   namenode:
     image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
     container_name: namenode
-    environment:
-      - CLUSTER_NAME=test
     ports:
       - "9870:9870"
+    environment:
+      - CLUSTER_NAME=test
     volumes:
       - namenode:/hadoop/dfs/name
-    command: >
-      bash -c "
-      sed -i 's/deb.debian.org/archive.debian.org/g' /etc/apt/sources.list &&
-      sed -i 's/security.debian.org/archive.debian.org/g' /etc/apt/sources.list &&
-      apt-get update &&
-      apt-get install -y python3 &&
-      ln -s /usr/bin/python3 /usr/bin/python &&
-      /entrypoint.sh namenode
-      "
 
   datanode:
     image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
