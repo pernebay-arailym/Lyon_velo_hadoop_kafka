@@ -1,4 +1,4 @@
-{"number":2010,"status":"OPEN","last_update":1712473200,"available_bikes":1,"available_bike_stands":21,"bike_stands":22}
-{"number":2011,"status":"OPEN","last_update":1712473260,"available_bikes":10,"available_bike_stands":12,"bike_stands":22}
-{"number":2012,"status":"CLOSED","last_update":1712473300,"available_bikes":5,"available_bike_stands":17,"bike_stands":22}
+{"number":2010,"status":"OPEN","last_update":1712473200,"available_bikes":1,"available_bike_stands":21,"bike_stands":22},
+{"number":2011,"status":"OPEN","last_update":1712473260,"available_bikes":10,"available_bike_stands":12,"bike_stands":22},
+{"number":2012,"status":"CLOSED","last_update":1712473300,"available_bikes":5,"available_bike_stands":17,"bike_stands":22},
 {"number":2013,"status":"OPEN","last_update":1712473360,"available_bikes":22,"available_bike_stands":0,"bike_stands":22}
